@@ -1,0 +1,31 @@
+{
+  "name": "confusing",
+  "version": "0.0.1",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc -b ./src",
+    "build:tests": "tsc -b ./tests",
+    "build:all": "tsc -b",
+    "run": "npm run build && node .",
+    "dev": "tsc-watch -p ./src --onSuccess node .",
+    "test": "vitest --dir ./tests"
+  },
+  "keywords": [
+    "runtime",
+    "conf",
+    "config",
+    "configuration",
+    "rc",
+    "cosmiconfig",
+    "nconf"
+  ],
+  "author": "oxcl",
+  "license": "MIT",
+  "description": "simple and customizable configuration loader for your node.js application",
+  "devDependencies": {
+    "@types/node": "^22.6.1",
+    "tsc-watch": "^6.2.0",
+    "typescript": "^5.6.2",
+    "vitest": "^2.1.1"
+  }
+}

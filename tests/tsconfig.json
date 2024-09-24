@@ -1,0 +1,10 @@
+{
+    "extends": "../tsconfig.base.json",
+    "compilerOptions": {
+        "outDir": "../out/tests",
+        "tsBuildInfoFile": "../.tsbuildinfo/tests.tsbuildinfo"
+    },
+    "referrences": [
+        {"path": "../src"}
+    ]
+}
